@@ -1,0 +1,182 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Portifólio Fábio Gades</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            display: grid;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #506E6A;
+        }
+
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center;/*centraliza o menu*/
+            gap: 20px;/*https://nekocalc.com/px-to-rem-converter*/
+        }
+
+
+        .minha_imagem {
+            grid-column-start: 1;
+            grid-column-end: 3;
+
+        }
+	
+	.img {
+    max-width: 28rem;
+    margin: 1rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+        .principal {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #506E6A;
+            color: white;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            color: #506E6A;
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid #506E6A 1px;
+        }
+
+        li {
+            float: left;
+        }
+
+        a:hover {
+            background-color: #506E6A;
+            color: white;
+        }
+
+        /* media query para dispositivos móveis */
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+
+            .minha_imagem {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+
+            .principal {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <h1 style="color: white; text-align: center;">Fábio Gades</h1>
+        <br>
+
+    </header>
+    <nav class="container menu">
+        <ul>
+            <li><a href="index.html">Sobre Mim</a></li>
+            <li><a href="historico.html">Histórico Profissional</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <div class="container wrapper">
+        <aside class="minha_imagem">
+            <img src="foto perfil.jpg">
+            <div class="infos">
+                <p><strong>Ocupação</strong> Consultor SAP</p>
+                <p>
+                    <strong>Data do Nascimento</strong>
+                    12/03/1993
+                </p>
+                </div>
+
+        </aside>
+        <section class="principal">
+            <h1>
+                Histórico Profissional | Fábio Gades
+            </h1>
+            <h1> Empresas
+            </h1>
+
+
+                <div class="card">
+                <div class="img">
+                    <img src="stefanini.png" alt="Image" height="150" width="150">
+
+                    <div class="">
+                        <h2>Stefanini</h2>
+                        <p>Consultor Bilingue de TI</p>
+
+                    </div>
+                </div>
+
+                <div class="img">
+                    <img src="HCL.png" alt="Image" height="150" width="150">
+
+                    <div class="">
+                        <h2>HCL Technologies</h2>
+                        <p>Consultor Bilingue de TI</p>
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="meta.png" alt="Image" height="150" width="150">
+
+                    <div class="">
+                        <h2>Meta</h2>
+                        <p>Ticket Manager</p>
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="meta.png" alt="Image" height="150" width="150">
+
+                    <div class="">
+                        <h2>Meta</h2>
+                        <p>Consultor SAP MM Bilingue</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="container">
+        <h1>Desenvolvido para entrega de trabalho educacional</h1>
+    </footer>
+
+    
+
+</body></html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profissional de TI</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-gap: 20px;
+            padding: 20px;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 13;
+            background-color: #506E6A;
+            text-align: center;
+            color: white;
+            padding: 10px 0;
+        }
+
+        .menu {
+            grid-column-start: 7;
+            grid-column-end: 13;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .imagem_profissional {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            text-align: center;
+        }
+
+        .principal {
+            grid-column-start: 4;
+            grid-column-end: 13;
+        }
+
+        .card {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .img {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+        }
+
+        .img img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 13;
+            background-color: #506E6A;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="container">
+        <h1>Apresentação Profissional de TI</h1>
+    </header>
+    <nav class="container menu">
+        <ul>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Experiência</a></li>
+            <li><a href="#">Habilidades</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <aside class="imagem_profissional">
+            <img src="https://media.licdn.com/dms/image/D4D35AQEJbHizPo7msg/profile-framedphoto-shrink_800_800/0/1708978966258?e=1712602800&v=beta&t=aWKLX-1C6MgW8tsk2c0jRHLnvkiWOHZamrHCcWDfWgE" alt="Foto do Profissional de TI">
+            <div class="infos">
+                <p><strong>Nome:</strong> Fábio Gades</p>
+                <p><strong>Idade:</strong> 31 anos</p>
+                <p><strong>Ramo:</strong> Consultor TI</p>
+            </div>
+        </aside>
+        <section class="principal">
+            <h2>Sobre mim</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae lacus quam. Vivamus efficitur nisi nec diam efficitur, a commodo ligula lacinia. Curabitur et erat vel mauris ullamcorper varius. In at eros nec felis accumsan tempor. Fusce viverra, elit in scelerisque convallis, tortor orci vestibulum mauris, nec convallis leo nisl id est. Integer fermentum odio sit amet urna mattis, non suscipit velit malesuada. Proin eget pharetra leo. Nullam sed tortor vestibulum, aliquam elit a, cursus mi. Aenean sit amet tellus vitae arcu dictum bibendum.</p>
+            <h2>Experiência</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae lacus quam. Vivamus efficitur nisi nec diam efficitur, a commodo ligula lacinia. Curabitur et erat vel mauris ullamcorper varius. In at eros nec felis accumsan tempor. Fusce viverra, elit in scelerisque convallis, tortor orci vestibulum mauris, nec convallis leo nisl id est. Integer fermentum odio sit amet urna mattis, non suscipit velit malesuada.</p>
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Desenvolvimento Web</li>
+                <li>Programação em Python</li>
+                <li>Administração de Sistemas</li>
+                <li>Banco de Dados</li>
+            </ul>
+        </section>
+    </div>
+    <footer class="container">
+        <p>© 2024 Profissional de TI. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
